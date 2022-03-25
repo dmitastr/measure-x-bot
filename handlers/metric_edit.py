@@ -1,4 +1,3 @@
-from ast import pattern
 from telegram.ext import (
     CallbackContext, 
     CommandHandler,

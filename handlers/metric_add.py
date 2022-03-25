@@ -17,13 +17,9 @@ from telegram import (
     ParseMode
 )
 
-import logging
-import yaml
 import arrow
-import os
 
 from db_utils import YDataBase
-from ydb_persistence import YDBPersistence
 from utils import upload_photo, create_text
 
 
