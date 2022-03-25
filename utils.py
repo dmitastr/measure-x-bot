@@ -3,7 +3,6 @@ import arrow
 import requests
 import base64
 
-
 dev_ids = [40322523]
 
 def create_text(user_id, first_name, last_name, query, params) -> str:

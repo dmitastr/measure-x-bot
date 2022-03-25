@@ -1,34 +1,22 @@
 from ast import pattern
 from telegram.ext import (
-    Updater, 
     CallbackContext, 
-    InlineQueryHandler,
     CommandHandler,
     ConversationHandler,
-    MessageHandler,
     CallbackQueryHandler,
-    Filters
 )
 from telegram import (
-    Bot,
-    InlineQueryResultArticle, 
-    InputTextMessageContent, 
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     Update,
-    ReplyKeyboardMarkup, 
     ReplyKeyboardRemove,
     ParseMode
 )
 
 import logging
-import yaml
-import arrow
-import os
 
 from db_utils import YDataBase
-from ydb_persistence import YDBPersistence
-from utils import upload_photo, create_text, dev_ids
+from utils import upload_photo, dev_ids
 
 logger = logging.getLogger(__name__)
 
